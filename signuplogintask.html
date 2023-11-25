@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signupandlogin.css">
+   
+</head>
+<body>
+    <div id="holder">
+     <div id="signupholder">
+    <span>Sign up</span> <br>
+    <form action="">
+    <input class="inpute" id="inputFirstName" type="text" placeholder="First Name"> <br>
+    <input class="inpute" id="inputLastName" type="text" placeholder="Last Name"><br>
+    <input class="inpute" id="inputDob" type="date" placeholder="Date of Birth"> <br>
+    <input class="inpute" id="inputEmail" type="email" placeholder="Email"> <br>
+    <input class="inpute" id="inputPassword" type="password" placeholder="Password"> <br>
+    <input class="inpute" id="inputCp" type="password" placeholder="Confirm Password"> <br>
+    <input class="inpute" id="check" type="checkbox">
+    <span>Agree to Terms and Condition</span> <br>
+    <button type="button" onclick="display(event)">Sign Up</button>
+</form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th> Last Name</th>
+                <th> Dob </th>
+                <th> Email</th>
+                <th>Password</th>
+                <th>Confirm Password</th>
+                <th>Check</th>
+            </tr>
+        </thead>
+        <tbody id="display1">
+            
+        </tbody>
+    </table>
+<p id="validation"></p>
+
+</div>
+<div id="signinholder">
+    <span>Sign In</span><br>
+    <input id="inputemail"type="email" placeholder="Email"> <br>
+    <input id="inputpass" type="password" placeholder="Password"> <br>
+    <button onclick="signing()">Sign In</button>
+    <div id="display2"></div>
+</div>
+</div>
+</body>
+<script src="singupandlogin.js"></script>
+</html>
